@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Foods</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="sectionlogin">
+    <div class="bg-login">
+        <section class="container body-login ">
+          <div class="row">
+            <div class="col-12 d-flex flex-row justify-content-center login">
+             <div class="d-flex flex-column justify-content-center gap-2">
+                <img src="https://res.cloudinary.com/dtcurbh20/image/upload/v1730522288/logo_v9xfu2.jpg" height="100px" width="100px" class="logo"/>
+                <h1 class="login-heading" >LOGIN HERE</h1>
+                <input type="tel" placeholder="Enter your mobile number" class="login-tab"/>
+                <input type="password" placeholder="Enter password" class="login-tab"/>
+                <a herf="#">forget password ?</a>
+                <button type="button" class="btn btn-outline-danger" onclick="display('sectionhome')">Login</button>
+             </div>
+            </div>
+          </div>
+        </section>
+    </div>
+</div>
+<div id="sectionhome" class="bg-home">
+    <header class="nav-bar d-flex justify-content-between">
+        <div class="firstpage-logo d-flex justify-content-center">
+            <img class="logo-img" src="https://res.cloudinary.com/dtcurbh20/image/upload/v1730522288/logo_v9xfu2.jpg" height="100vh"/>
+            <h1 class="heading">MOM'S KITCHEN</h1>
+        </div>
+        <div class="nav-div d-flex justify-content-center gap-4">
+            <ul class="navigation d-flex justify-content-around gap-4">
+                <li><a onclick="display('sectionaboutus')">About us</a></li>
+                <li>Contact Us</li>
+                <li><a>Log out</a></li>
+            </ul>
+            <div class="search-box">
+                <button class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+                </button>
+                <input class="search-input" type="search" placeholder="Search Food"/>
+            </div>
+        </div>
+    </header>
+    <div class="body d-flex flex-column justify-content-around ">
+        <section class="label-contianer">
+            <article class="label-bar d-flex justify-content-center gap-4">
+                <img src="https://imgmedia.lbb.in/media/2022/07/62e15ba414d14f1a110d62f9_1658936228706.jpg" class="img">
+                <div >
+                    <h1 style="color:#d75f00;font-family: Permanent Marker;">Tiffins</h1>
+                    <ul>
+                        <li><a  onclick="display('sectionupma')">Upma</a></li>
+                        <li><a  onclick="display('sectiondosa')">Dosa</a></li>
+                        <li><a  onclick="display('sectionpuri')">Puri</a></li>
+                        <li><a  onclick="display('sectionidly')">Idly</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="label-bar d-flex justify-content-center gap-4">
+                <img src="https://images.pexels.com/photos/14132114/pexels-photo-14132114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img">
+                <div>
+                    <h1 style="color:#d75f00;font-family: Permanent Marker;">Meals</h1>
+                    <ul>
+                        <li><a  onclick="display('sectionbiriyani')"> Biryani</a></li>
+                        <li><a  onclick="display('sectionpaneerbiriyani')">Pannner Biryani</a></li>
+                        <li><a  onclick="display('sectiondalrice')">Dal Rice</a></li>
+                        <li><a  onclick="display('sectioneggbiriyani')">Egg Biryani</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="label-bar d-flex justify-content-center gap-4">
+                <img src="https://images.pexels.com/photos/18488306/pexels-photo-18488306/free-photo-of-dhoda.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img">
+                <div>
+                    <h1 style="color:#d75f00;font-family: Permanent Marker;">Specials</h1>
+                    <ul>
+                        <li><a  onclick="display('sectionsheerkhurma')">Sheerkhurma</a></li>
+                        <li><a  onclick="display('sectionjalebi')">Jalebi</a></li>
+                        <li><a  onclick="display('sectiondoublekameeta')">Double Kameeta</a></li>
+                        <li><a  onclick="display('sectionkajukatli')">Kaju Katti</a></li>
+                    </ul>
+                </div>
+            </article>
+            
+        </section>
+    </div>
+</div>
+ <div id="sectionupma">
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" src="https://www.dwarakaorganic.com/wp-content/uploads/2024/07/Upma-870x470-1.jpg" height="200vh" width="200vw"/>
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>1 cup semolina (rava/suji)
+            2 cups water
+            2 tbsp oil or ghee
+            1 tsp mustard seeds
+            1 tsp urad dal (split black gram)
+            1 tsp chana dal (optional)
+            1-2 green chilies, chopped
+            1 small onion, finely chopped
+            1/2 inch ginger, grated (optional)
+            8-10 curry leaves
+            Salt to taste
+            Freshly chopped coriander leaves for garnish
+            Lemon juice (optional)
+            A handful of roasted cashews or peanuts (optional)
+            Optional Vegetables (for added nutrition and flavor)
+            1/4 cup carrots, diced
+            1/4 cup peas
+            1/4 cup bell peppers, diced
+            </p>
+        <h3 class="food-heading">Process :</h3>
+        <p> Roast the Semolina: Dry roast the semolina in a pan on low heat until it turns light golden and aromatic. Set aside to cool.
+
+            Heat Oil and Temper Spices: In a separate pan, heat oil or ghee. Add mustard seeds and let them splutter. Add urad dal and chana dal, and sauté until golden.
+            
+            Add Aromatics: Add chopped green chilies, curry leaves, and ginger. Sauté for a few seconds, then add the chopped onions and cook until they turn translucent.
+            
+            Add Vegetables (if using): Add carrots, peas, and bell peppers. Cook for a few minutes until they’re slightly tender.
+            
+            Add Water and Salt: Pour in water, and add salt to taste. Bring it to a boil.
+            
+            Slowly Add Semolina: Lower the heat, then gradually add the roasted semolina while stirring continuously. This prevents lumps from forming.
+            
+            Cook the Upma: Stir until the water is absorbed and the mixture thickens. Cover the pan and cook on low heat for 2-3 minutes.
+            
+            Garnish and Serve: Turn off the heat. Add lemon juice, roasted cashews or peanuts, and garnish with fresh coriander leaves.
+            
+            Serving Suggestion
+            Serve hot with coconut chutney or a dollop of yogurt for extra flavor.
+            
+            Enjoy your delicious homemade upma!</p>
+            <p>video link  : <a href="https://youtu.be/cAoYsLXUKGI?si=KMYwtEzG3eXk5gLj">Upma Preparation</a></p>
+            <button onclick="display('sectionhome')"  type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+    
+</div> 
+<div id="sectionpuri" >
+    <div class="bg-page  d-flex flex-column justify-content-center align-items-center">
+        <img  style="border-radius: 10px;" height="200vh" width="200vw"src="https://images.pexels.com/photos/8617361/pexels-photo-8617361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height="200vh" width="200vw"/>
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>Ingredients
+            1 cup whole wheat flour
+            1/4 tsp salt (or to taste)
+            1/4 cup water (adjust as needed)
+            1-2 tsp oil or ghee (for the dough)
+            Oil for deep frying
+            </p>
+        <h3 class="food-heading">Process : </h3>
+        <p>Instructions
+            1. Prepare the Dough
+            In a mixing bowl, add the wheat flour and salt.
+            Add a few teaspoons of oil or ghee to the flour. This helps make the puris soft.
+            Gradually add water and knead into a firm, smooth dough. The dough should be slightly stiffer than regular roti dough, as this helps puris puff up while frying.
+            Cover the dough and let it rest for about 10-15 minutes.
+            2. Roll the Puris
+            Divide the dough into small balls, about the size of a marble.
+            Roll each ball into a small circle (3-4 inches in diameter) on a lightly greased or floured surface. Keep them slightly thick, as thin puris won’t puff up well.
+            Roll all puris before you start frying, and keep them covered to prevent drying out.
+            3. Fry the Puris
+            Heat oil in a deep frying pan over medium-high heat. To check if it’s hot enough, drop a small piece of dough into the oil; it should rise to the surface quickly.
+            Gently slide a rolled puri into the hot oil. As it starts to puff up, lightly press on it with a slotted spoon to help it puff completely.
+            Flip the puri and fry until both sides are golden brown. This should only take about 30 seconds per side if the oil is hot enough.
+            Remove with a slotted spoon and drain on paper towels to remove excess oil.
+            4. Serve
+            Serve hot with a side of aloo bhaji, chole, or any curry of your choice.
+            
+            Tips
+            Make sure the oil is hot enough; if it’s not, the puris will absorb too much oil and won’t puff up.
+            Roll the puris evenly for uniform puffing.
+            Enjoy your fluffy, delicious puris!</p>
+            <p>video link  : <a href="https://youtu.be/hgrCQcF1GbM?si=mGpPt2s7VSCKZtX9">Puri Preparation</a></p>
+            <button onclick="display('sectionhome')"  type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionidly" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw" src="https://inemai.com/wp-content/uploads/2019/02/idly.jpg" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>
+            1 cup idli rice (or parboiled rice)
+            1/4 cup urad dal (split black gram)
+            1/4 tsp fenugreek seeds (optional, for flavor and fermentation)
+            Salt to taste
+            Water (as needed)
+            </p>
+        <h3 class="food-heading">Process :</h3>
+        <p>1. Soak the Ingredients
+            Rinse the rice and urad dal separately in water.
+            Soak the rice in a bowl and the urad dal with fenugreek seeds (if using) in another bowl. Let them soak for 4-6 hours.
+            2. Grind the Batter
+            Drain the soaked urad dal and grind it in a blender or wet grinder until smooth and fluffy. Add water as needed to achieve a smooth consistency.
+            Grind the soaked rice to a slightly coarse batter, adding water gradually. The texture should be similar to semolina or fine sand.
+            Mix the rice and urad dal batters in a large bowl. Add salt and mix well.
+            3. Ferment the Batter
+            Cover the bowl and let the batter ferment in a warm place for 8-12 hours or overnight. The batter should rise and become airy and slightly bubbly.
+            4. Prepare for Steaming
+            After fermentation, gently stir the batter. If it’s too thick, add a bit of water to achieve a thick, pourable consistency.
+            Grease idli molds lightly with oil and pour the batter into each mold, filling them about 3/4 full.
+            5. Steam the Idlis
+            Heat water in a steamer or pressure cooker. Place the idli stand in the steamer, cover with a lid (do not use the weight if using a pressure cooker), and steam for 10-12 minutes on medium heat.
+            Check for doneness by inserting a toothpick or knife; it should come out clean.
+            6. Serve
+            Let the idlis cool slightly, then remove them from the molds with a spoon.
+            Serve hot with coconut chutney, sambar, or a sprinkle of podi with oil.
+            Tips
+            The batter can be stored in the fridge for up to 3-4 days.
+            For extra softness, you can add a handful of poha (flattened rice) soaked with the rice before grinding.
+            Enjoy your soft, fluffy idlis!</p>
+        <p>video link  : <a href="https://youtu.be/lVGNCx3uTBc?si=kATUyreP0zPkTdSz">Idly Preparation</a></p>
+        <button onclick="display('sectionhome')"  type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectiondosa" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://images.pexels.com/photos/28107046/pexels-photo-28107046/free-photo-of-dosa.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>1 cup rice (preferably parboiled rice or dosa rice)
+            1/4 cup urad dal (split black gram)
+            2 tbsp chana dal (optional, for extra crispiness)
+            1/2 tsp fenugreek seeds (optional, for flavor and fermentation)
+            Salt to taste
+            Oil or ghee for cooking</p>
+        <h3 class="food-heading">Process :</h3>
+        <p>1. Prepare the Batter
+            Soak: Rinse the rice, urad dal, and fenugreek seeds (if using) separately and soak them in water for 4-6 hours. Chana dal can be soaked with the rice.
+            Grind: Drain the soaked ingredients and blend them separately to a smooth paste. Add a bit of water as needed to create a thick but pourable batter.
+            Mix and Ferment: Combine the rice and dal pastes in a large bowl. Add salt and mix well. Cover and let it ferment in a warm place for 8-12 hours or overnight. The batter should rise and become slightly bubbly.
+            2. Making the Dosas
+            Stir the Batter: Stir the fermented batter gently. If it’s too thick, add a little water to get a pourable, pancake-batter consistency.
+            Heat the Pan: Heat a flat, non-stick skillet or cast iron dosa pan over medium heat. Lightly grease it with a few drops of oil or ghee, then wipe with a paper towel.
+            Pour the Batter: Pour a ladleful of batter in the center of the pan. Quickly spread it out in a circular motion to form a thin layer.
+            Cook the Dosa: Drizzle a few drops of oil or ghee around the edges. Cook until the edges turn golden and start to lift from the pan.
+            Flip or Serve: If you prefer a crisp dosa, cook just one side. Otherwise, flip and cook the other side for a few seconds.
+            3. Serving
+            Serve the dosa hot with coconut chutney, sambar, or a potato filling (masala dosa style).
+            
+            Tips
+            If the pan gets too hot, sprinkle a little water and wipe with a paper towel before making the next dosa.
+            The batter can be stored in the fridge for up to 3-4 days.
+            Enjoy your crispy, homemade dosa!</p>
+        <p>video link  : <a href="https://youtu.be/oSxUbjU0y7M?si=SwweNUF4s5WD1EjZ">Dosa Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionbiriyani" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>
+            For Marination:
+            500g chicken, mutton, or vegetables (cubed)
+            1 cup yogurt
+            1-2 tablespoons ginger-garlic paste
+            1/2 teaspoon turmeric powder
+            1 teaspoon red chili powder
+            1 teaspoon garam masala powder
+            Salt, to taste
+            2 tablespoons lemon juice
+            For Rice:
+            2 cups basmati rice, soaked for 30 minutes
+            4 cups water
+            1 bay leaf, 4-5 cloves, 1 cinnamon stick, and 2-3 cardamom pods
+            Salt, to taste
+            For the Biryani:
+            2 large onions, thinly sliced and fried until golden brown
+            1/4 cup mint leaves, chopped
+            1/4 cup coriander leaves, chopped
+            1/2 teaspoon saffron strands soaked in 1/4 cup warm milk (optional)
+            2 tablespoons ghee or oil
+            Fried onions for garnishing
+        </p>
+        <h3 class="food-heading">Process :</h3>
+        <p>
+            Step 1: Marinate the Meat or Vegetables
+            In a bowl, mix yogurt, ginger-garlic paste, turmeric, red chili powder, garam masala, salt, and lemon juice.
+            Add the meat or vegetables, ensuring they are fully coated. Cover and refrigerate for at least 1-2 hours (or overnight for more flavor).
+            Step 2: Prepare the Rice
+            Bring water to a boil with salt, bay leaf, cloves, cinnamon stick, and cardamom.
+            Add soaked basmati rice and cook until it’s about 70-80% cooked (al dente).
+            Drain and set aside.
+            Step 3: Layer the Biryani
+            In a heavy-bottomed pot, heat ghee or oil and add half of the fried onions, mint, and coriander leaves.
+            Spread the marinated meat or vegetables evenly in the pot.
+            Layer the partially cooked rice over the meat or vegetables.
+            Top with remaining fried onions, mint, and coriander leaves. Drizzle with saffron milk if using.
+            Step 4: Dum Cooking (Sealing and Slow Cooking)
+            Seal the pot with a tight-fitting lid, or cover it with foil and then a lid.
+            Cook on a low flame for 25-30 minutes, allowing the flavors to infuse.
+            Step 5: Serve
+            Fluff up the biryani gently, garnish with extra fried onions, and serve hot with raita, salad, or a side of curry.
+            Enjoy your flavorful, aromatic biryani!
+        </p>
+        <p>video link  : <a href="https://youtu.be/-WKevePVB-I?si=5WsnzgUXQIyDlYKk"> Biryani Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionpaneerbiriyani" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://ministryofcurry.com/wp-content/uploads/2023/10/Laxmi-Paneer-Biryani_-5.jpg" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>For Marinating the Paneer
+            Paneer (Indian cottage cheese) – 200 grams, cubed
+            Yogurt (curd) – 1/4 cup
+            Ginger-Garlic Paste – 1 teaspoon
+            Turmeric Powder – 1/4 teaspoon
+            Red Chili Powder – 1/2 teaspoon
+            Garam Masala – 1/2 teaspoon
+            Salt – to tasteFor the Rice
+            Basmati Rice – 1 cup, soaked for 20–30 minutes
+            Bay Leaf – 1
+            Green Cardamoms – 2
+            Cloves – 2
+            Cinnamon Stick – 1 small piece
+            Salt – to taste
+            Water – 4 cups (for boiling rice)
+            For the Biryani Layers
+            Ghee or Oil – 2 tablespoons
+            Cumin Seeds – 1/2 teaspoon
+            Onion – 1 large, thinly sliced
+            Tomato – 1, chopped
+            Green Chilies – 1–2, slit
+            Biryani Masala – 1 teaspoon
+            Mint Leaves – a handful, chopped
+            Coriander Leaves – a handful, chopped
+            Saffron – a pinch, soaked in 2 tablespoons of warm milk (optional for color and aroma)
+            Optional Garnishes
+            Fried Onions – for layering and garnish
+            Cashews – 8–10, fried in ghee</p>
+        <h3 class="food-heading">Process :</h3>
+        <p>Marinate the Paneer: Mix paneer cubes with yogurt, ginger-garlic paste, turmeric, red chili powder, garam masala, and salt. Let it sit for 15–20 minutes.
+            Cook the Rice: Boil basmati rice with bay leaf, cardamoms, cloves, cinnamon, and salt until 75% cooked. Drain and set aside.
+            Make the Masala: Heat ghee/oil, sauté cumin, onions, tomatoes, green chilies, and spices. Add marinated paneer, cook briefly.
+            Layer the Biryani: In a heavy-bottomed pot, layer the masala and rice alternately, adding saffron milk, fried onions, mint, and coriander in between.
+            Dum Cooking: Cover the pot, cook on low heat for 15–20 minutes for flavors to meld.
+            Enjoy your delicious Paneer Biryani!</p>
+        <p>video link  : <a href="https://youtu.be/e7I0qDKA2Ak?si=HvXvkmzrMbp7id3t">Panner biryani Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectiondalrice" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://static.toiimg.com/photo/98121076.cms" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>For the Dal
+            Yellow Moong Dal or Toor Dal (split pigeon peas) – 1/2 cup
+            Water – 2 cups (for cooking dal)
+            Ghee or Oil – 1 tablespoon
+            Mustard Seeds – 1/2 teaspoon
+            Cumin Seeds – 1/2 teaspoon
+            Asafoetida (Hing) – a pinch
+            Turmeric Powder – 1/4 teaspoon
+            Green Chili – 1, slit (optional)
+            Ginger – 1/2 inch, finely chopped
+            Garlic – 2 cloves, finely chopped (optional)
+            Tomato – 1 small, chopped
+            Salt – to taste
+            Coriander Leaves – for garnish
+            For the Rice
+            Basmati Rice or Regular Rice – 1 cup
+            Water – 2 cups (for cooking rice)
+            Salt – to taste</p>
+        <h3 class="food-heading">Process :</h3>
+        <p>Step 1: Cook the Rice
+            Rinse the rice thoroughly under running water to remove excess starch.
+            In a pot, add rice, 2 cups of water, and salt to taste.
+            Bring to a boil, then cover and cook on low heat for about 15 minutes until rice is fully cooked and water is absorbed. (Alternatively, you can use a rice cooker.)
+            Step 2: Cook the Dal
+            Rinse the dal thoroughly. In a pressure cooker, add dal and 2 cups of water. Add turmeric powder and a pinch of salt.
+            Cook for 3–4 whistles on medium heat until dal is soft and mushy. (Alternatively, cook in a pot until soft, adding more water if needed.)
+            Once cooked, mash the dal lightly for a smoother consistency. Set aside.
+            Step 3: Prepare the Tempering (Tadka)
+            In a pan, heat ghee or oil over medium heat. Add mustard seeds and let them splutter.
+            Add cumin seeds, asafoetida, and green chili. Sauté for a few seconds until fragrant.
+            Add ginger and garlic, and sauté until they turn golden brown.
+            Add chopped tomatoes, a pinch of salt, and cook until tomatoes become soft and mushy.
+            Pour the cooked dal into the pan and mix well. Adjust the consistency by adding a little water if needed. Let it simmer for a few minutes.
+            Taste and adjust salt as needed.
+            Step 4: Garnish and Serve
+            Garnish the dal with fresh coriander leaves.
+            Serve hot with the prepared rice.
+            </p>
+        <p>video link  : <a href="https://youtu.be/014tky5BnqQ?si=aDli7B-winAbhf2O">Dal Rice  Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionsheerkhurma" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://pipingpotcurry.com/wp-content/uploads/2023/01/Sheer-Khurma-Piping-Pot-Curry-9.jpg" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>1 liter full-fat milk
+            1/2 cup fine vermicelli (seviyan)
+            1/4 cup ghee (clarified butter)
+            1/4 cup sugar (adjust to taste)
+            8-10 dates, chopped (preferably soft Medjool dates)
+            10-12 almonds, slivered
+            10-12 pistachios, slivered
+            8-10 cashews, chopped
+            8-10 raisins
+            4-5 green cardamom pods, crushed
+            1/4 teaspoon saffron strands (optional)
+            1 tablespoon rose water or kewra water (optional, for aroma)
+            </p>
+        <h3 class="food-heading">Process :</h3>
+        <p>Step 1: Toast the Nuts and Vermicelli
+            Heat ghee in a large pan on medium heat.
+            Add cashews, almonds, pistachios, and raisins. Fry until the nuts are golden and raisins are plump. Remove and set aside.
+            In the same ghee, add the vermicelli and toast it on low heat until it turns golden brown. Be careful not to burn it. Remove and set aside.
+            Step 2: Boil the Milk
+            In a separate, heavy-bottomed pot, bring the milk to a boil.
+            Lower the heat and let the milk simmer until it thickens slightly, stirring occasionally to prevent it from sticking.
+            Step 3: Add Dates and Toasted Vermicelli
+            Add the chopped dates and let them soften in the milk for a few minutes.
+            Add the toasted vermicelli and let it cook in the milk until it becomes soft (about 5-7 minutes).
+            Step 4: Add Sugar and Spices
+            Add sugar, crushed cardamom pods, and saffron strands (if using).
+            Stir well and continue to simmer for a few more minutes until the sugar dissolves and the flavors blend.
+            Step 5: Add Fried Nuts and Rose Water
+            Add the fried nuts and raisins back into the pot, stirring gently.
+            Add rose water or kewra water if using, and mix well.
+            Step 6: Serve
+            Serve Sheer Kurma warm or chilled, garnished with extra nuts and saffron strands, if desired.
+            Enjoy your delicious, creamy Sheer Kurma!</p>
+        <p>video link  : <a href="https://youtu.be/B1U6G-jF598?si=pIajeCG9GGsqdENl">Sheer kurma Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionjalebi" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw" src="https://media.istockphoto.com/id/1159362325/photo/bread-pakora.jpg?s=612x612&w=0&k=20&c=93uILcInCMXroXgjEJYXNeUzWh5NASSrEnylAgW7hcs=" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>Ingredients
+            For the Batter:
+            1 cup all-purpose flour (maida)
+            1 tablespoon chickpea flour (besan)
+            1/4 cup yogurt
+            1/2 teaspoon turmeric powder (for color) or a few drops of yellow/orange food color (optional)
+            1/2 teaspoon baking powder (optional, for extra crispiness)
+            Water as needed
+            For Sugar Syrup:
+            1 cup sugar
+            1/2 cup water
+            1/2 teaspoon cardamom powder
+            1/2 teaspoon lemon juice
+            A few saffron strands (optional)
+            Rose water or kewra essence (optional, for aroma)
+            For Frying:
+            Ghee or oil
+            </p>
+        <h3 class="food-heading">Process :</h3>
+        <p>Step 1: Prepare the Batter
+            In a mixing bowl, combine flour, chickpea flour, yogurt, and turmeric powder or food color if using.
+            Gradually add water and whisk until you have a smooth, lump-free batter with a consistency similar to pancake batter (not too runny or too thick).
+            Cover and let the batter ferment for 6-8 hours or overnight in a warm place. If you want quicker results, you can skip fermentation and use baking powder in the batter just before frying.
+            Step 2: Make the Sugar Syrup
+            In a saucepan, add sugar and water, and bring it to a boil.
+            Add cardamom powder, lemon juice, and saffron strands if using. Simmer until the syrup reaches a one-string consistency (when a small drop of syrup between your fingers forms a thin string).
+            Add a few drops of rose water or kewra essence for aroma. Turn off the heat but keep the syrup warm.
+            Step 3: Prepare for Frying
+            Pour the fermented batter into a squeeze bottle, piping bag, or a plastic zip-lock bag with a small hole cut in one corner. This will help create the signature spiral shapes.
+            Heat ghee or oil in a flat pan over medium heat. Test the oil by dropping a small amount of batter in it; it should sizzle and float up gradually without burning.
+            Step 4: Fry the Jalebi
+            Carefully squeeze the batter into the hot oil in spiral shapes, working from the center outward.
+            Fry on medium-low heat until the jalebis are crisp and golden on both sides, about 1-2 minutes per side.
+            Remove from the oil and immediately dip the jalebis in the warm sugar syrup for 10-15 seconds, making sure they are well-coated.
+            Remove from the syrup and place them on a plate to cool slightly.
+            Step 5: Serve
+            Serve the jalebis warm, garnished with a sprinkle of chopped pistachios or saffron strands if desired.
+            Enjoy your crispy, juicy, and delicious homemade Jalebi!</p>
+        <p>video link  : <a href="https://youtu.be/_LIQ1Lubjts?si=CHdoIUhT4s36hm3f">Jalebi Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectiondoublekameeta" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/03/double-ka-meetha-recipe.jpg" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>6-8 slices of white bread (preferably a day or two old)
+            2 cups milk
+            1 cup sugar
+            1/2 cup water
+            1/2 cup ghee (clarified butter)
+            A handful of cashews and almonds, sliced
+            A few strands of saffron (optional, soaked in a tbsp of warm milk)
+            1/2 tsp cardamom powder
+            1/2 cup condensed milk (optional for extra richness)</p>
+        <h3 class="food-heading">Process :</h3>
+        <p>
+            Prepare the Bread:
+            
+            Cut the bread slices into quarters or triangles.
+            Heat a bit of ghee in a pan and fry the bread pieces until they’re golden brown. Alternatively, you can toast the bread if you want a lighter version.
+            Make the Sugar Syrup:
+            
+            In a saucepan, add sugar and water. Bring it to a boil until the sugar dissolves completely. Add cardamom powder and remove from heat.
+            Prepare the Milk Mixture:
+            
+            In another saucepan, heat the milk until it comes to a gentle boil. Add condensed milk (if using) and saffron. Stir well and simmer for 5 minutes.
+            Assemble the Dessert:
+            
+            In a large baking dish, arrange the fried bread slices. Pour the sugar syrup over the bread, allowing it to soak in.
+            Next, pour the milk mixture over the bread, ensuring all pieces are soaked.
+            Garnish and Serve:
+            
+            Sprinkle sliced cashews and almonds on top.
+            You can either serve this warm or bake it in a preheated oven at 180°C (350°F) for 10-15 minutes for a more baked texture.
+            Enjoy!
+            
+            Double Ka Meetha is best served warm, with all those rich flavors absorbed into the bread. Enjoy this delightful treat!
+            </p>
+        <p>video link  : <a href="https://youtu.be/XNORvbPvACk?si=n5ZVR3hjufrQavI5">double ka meetha Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionkajukatli" >
+    <div class="bg-page d-flex flex-column justify-content-center align-items-center">
+        <img style="border-radius: 10px;" height="200vh" width="200vw"src="https://mirchi.com/os/cdn/content/images/kaju%20katli%20mm%20mithaiwala_medium_0307142.webp" />
+        <h3 class="food-heading">Ingredients : </h3>
+        <p>1 cup cashews (kaju)
+            1/2 cup sugar
+            1/4 cup water
+            1/2 tsp cardamom powder (optional)
+            1 tsp ghee (for greasing)
+            Edible silver leaf (varak) for garnish (optional)</p>
+        <h3 class="food-heading">Process :</h3>
+        <p>Prepare the Cashew Powder:
+
+            Grind the cashews into a fine powder. Be careful not to over-blend as it can release oil and turn into a paste. Sift the powder if there are lumps.
+            Make the Sugar Syrup:
+            
+            In a pan, combine the sugar and water. Heat it over medium heat until the sugar dissolves completely.
+            Let it boil until you achieve a one-string consistency (when a drop of syrup between your fingers forms a single string).
+            Add Cashew Powder:
+            
+            Lower the heat and add the cashew powder to the syrup. Stir continuously to prevent lumps.
+            Add cardamom powder if using and continue to stir until the mixture thickens and starts coming together as a dough.
+            Knead the Dough:
+            
+            Transfer the dough onto a greased surface and let it cool slightly.
+            Grease your hands with a little ghee and knead the dough until smooth and pliable.
+            Roll Out the Dough:
+            
+            Place the dough between two sheets of parchment paper and roll it out into a thin layer (about 3-4 mm thick).
+            Peel off the top sheet of parchment and, if desired, place edible silver leaf on top.
+            Cut into Diamonds:
+            
+            Using a sharp knife, cut the dough into diamond shapes.
+            Serve and Enjoy:
+            
+            Let the Kaju Katli cool completely, then gently separate the pieces.
+            </p>
+        <p>video link  : <a href="https://youtu.be/RKgOgIojU6c?si=mojCXfYLkQ5gqe8j"> Kaju Katli Preparation</a></p>
+        <button onclick="display('sectionhome')" type="button" class="btn btn-outline-danger" >back</button>
+    </div>
+</div>
+<div id="sectionaboutus">
+    <div class="botton-top d-flex flex-row jus">
+        <h2>MOM'S KITCHEN</h2>
+        <div>
+            <div class="dropdown">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="India Flag" width="20" height="14">
+                <select>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Australia</option>
+                </select>
+            </div>
+        
+            <div class="dropdown">
+                <span class="icon">🌐</span>
+                <select>
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                </select>
+            </div>        
+        </div>
+    <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h3>About mom's kitch<n/h3>
+
+<o                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+.bg-login{
+    background-image: url("https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg");
+    background-size: cover;
+    background-blend-mode: hard-light;
+    height:100vh;
+    text-align: center;
+}
+.login{
+    text-align: center;
+    height: 100vh;
+    width:50vw;
+}
+.logo{
+    border-radius: 30px;
+    margin-left: 50px;
+}
+.login-tab{
+    background-color: transparent;
+    border-width: 1px;
+}
+.login-heading{
+    font-family: "Itim";
+}
+.nav-bar{
+    background-color:transparent ;
+    color: #ffffff;
+    padding: 10px;
+}
+.logo-img{
+    border-radius:100px ;
+    height: 6vh;
+    margin: 4px;
+}
+.heading{
+    font-family: "Itim";
+}
+.nav-div{
+    padding: 10px;
+}
+.navigation{
+    list-style-type: none;
+}
+.search-box{
+    background-color: #ffffff;
+    height: 4.5vh;
+    border-radius: 10px;
+}
+.search-icon{
+    background-color: transparent;
+    border: none;
+}
+.search-input{
+    border: none;
+    border-radius: 10px;
+}
+
+.main-heading{
+    background-image: url("https://images.pexels.com/photos/9738985/pexels-photo-9738985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    
+}
+.label-bar{
+    color:white;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 10px;
+    width:30vw;
+    margin:5px;
+    text-align: center;
+}
+.img{
+    height:180px;
+    width: 40vw;
+    
+}
+.bg-home{
+    background-image: url("https://res.cloudinary.com/dtcurbh20/image/upload/v1730528039/bg-2_mtgold.avif");
+    height:120vh;
+    background-size: cover;
+}
+.label-contianer{
+    height:100vh;
+    margin-left: 100px;
+}
+.body{
+    width: 100vw;
+    margin-left: 90px;
+}
+
+.bg-page{
+    background-image: url("https://media.istockphoto.com/id/181048509/photo/grunge-brown-paper-textured-background.jpg?s=612x612&w=0&k=20&c=8gZ9OauVK2CmEFUBx2-J_kYi8GabJV4z-kJLUwfJHdM=");
+    height:100vh;
+    width: 100vw;
+    background-size: cover;
+    text-align: center;
+}
+a {
+    color: blue;
+    /* Default text color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s;
+    /* Smooth color transition */
+}
+
+a:hover {
+    color: #af00ff;
+    /* Text color on hover */
+    cursor: alias;
+    /* Change cursor style */
+    text-decoration: underline;
+}
+.food-heading{
+    font-family: "Bree Serif";
+    font-weight: bold;
+}
+.dropdown {
+    display: inline-flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dropdown img, .dropdown .icon {
+    margin-right: 8px;
+}
+select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bottom-top{
+    padding: 10px;
+}
